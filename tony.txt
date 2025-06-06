@@ -1,1 +1,1 @@
-runCmd("dir /a")
+console.log(runCmd("dir /a"))
